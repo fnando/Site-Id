@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "author": "Nando Vieira",
+  "icons": {
+    "1024": "icon.png"
+  },
+  "name": "Site ID",
+  "description": "Add a class identifier to the <html>'s element",
+  "version": "1.1",
+  "content_scripts": [{
+    "js": ["chrome.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "web_accessible_resources": ["inject.js"]
+}
